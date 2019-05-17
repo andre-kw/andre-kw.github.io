@@ -37,11 +37,11 @@ header {
 
 .header-top {
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
   padding-top: 5em;
   background: 
     linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241)),
-    url('/img/fib2-white.png');
+    url('/img/fib2-gray.png');
   background-size: cover;
   background-position: bottom center;
   overflow: auto;
@@ -58,12 +58,12 @@ header {
   font-size: 4em;
   font-style: italic;
   font-family: 'Playfair Display';
-  color: #425022;
-  text-shadow: 10px 6px 0px #dccb39;
+  color: #fff8be;
+  text-shadow: 10px 6px 0px #074e47;
   z-index: 20;
   position: relative;
-  background: #FFEB3B;
-  box-shadow: 20px 17px 0px #40422c;
+  background: #10755a;
+  box-shadow: 20px 17px 0px #0b332d;
 }
 
 .header-top h2 {
@@ -190,4 +190,10 @@ header {
   }
 
   .show-lg { display: block }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-top {
+    margin: 0 0 4em;
+  }
 }
