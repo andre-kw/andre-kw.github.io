@@ -34,6 +34,7 @@ header {
 .header-top {
   width: 100vw;
   height: 80vh;
+  padding-top: 5em;
   background: 
     linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241)),
     url('/img/fib2-white.png');
@@ -72,9 +73,19 @@ header {
 .header-mid {
   margin: -7em 0 0 0;
   z-index: 30;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header-mid h2 {
+  font-size: 9em;
+  margin: 1em 1em 0 0;
+  font-style: italic;
+  color: #d6d6d6;
+}
+
+.header-mid h3 {
   margin: 2em 20vw 0 auto;
   padding: 0.5em;
   width: 6em;
@@ -88,14 +99,10 @@ header {
   color: #f0f1f1;
   box-shadow: -13px -17px 0px #496942;
 }
-/*
-.header-mid h2:before {
-  display: block;
-  content: 'portfolio of';
-  position: absolute;
-  top: -1.4em;
-  color: #b7e48b;
-}*/
+
+.header-mid h3 span {
+  text-shadow: -6px -3px 0px #000000;
+}
 
 
 
@@ -132,6 +139,9 @@ header {
 }
 
 
+.show-lg { display: none }
+
+
 @media only screen and (min-width: 1888px) {
   header {
     flex-direction: row;
@@ -148,6 +158,5 @@ header {
     background: linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241));
   }
 
-  .header-mid h2 {
-  }
+  .show-lg { display: block }
 }
