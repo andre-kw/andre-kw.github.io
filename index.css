@@ -44,7 +44,6 @@ header {
     url('/img/fib2-gray.png');
   background-size: cover;
   background-position: bottom center;
-  overflow: hidden;
   position: relative;
 }
 
@@ -191,8 +190,8 @@ header {
   .show-lg { display: block }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .header-top {
-    margin: 0 0 5em;
+    margin: 0 0 8em;
   }
 }
