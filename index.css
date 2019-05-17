@@ -35,8 +35,8 @@ header {
   overflow-x: hidden;
 }
 
-article {
-  position: relative;
+main {
+  padding: 0 0 5em;
 }
 
 
