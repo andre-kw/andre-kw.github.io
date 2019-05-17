@@ -239,6 +239,7 @@ figure {
 
 figure img {
   width: 20em;
+  min-width: 20em;
   background-image: url(/img/framecircle2.png);
   background-size: 103% 103%;
   padding: 3em;
@@ -279,6 +280,7 @@ figure > div:before {
 figcaption {
   align-self: normal;
   font-family: 'Playfair Display';
+  font-weight: 400;
   font-size: 2.5em;
   text-shadow: 4px 9px 0px #dadada;
 }
