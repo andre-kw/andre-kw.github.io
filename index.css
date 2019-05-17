@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display:400i,900i&display=swap');
-
 html {
   background-color: #f0f1f1;
 }
@@ -43,6 +41,7 @@ main {
 .header-top {
   width: 100vw;
   height: 74vh;
+  min-height: 35em;
   padding-top: 5em;
   background: 
     linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241)),
@@ -278,7 +277,6 @@ figure > div:before {
 }
 
 figcaption {
-  margin: .5em 0 0;
   align-self: normal;
   font-family: 'Playfair Display';
   font-size: 2.5em;
