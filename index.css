@@ -41,7 +41,7 @@ main {
 .header-top {
   width: 100vw;
   height: 74vh;
-  min-height: 35em;
+  min-height: 32em;
   padding-top: 5em;
   background: 
     linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241)),

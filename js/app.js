@@ -36,7 +36,7 @@ const context = (function() {
 
     return `
       <figure>
-        <div><img src="${proj.img}" alt="A screenshot of ${proj.title}"></div>
+        <div><a target="_blank" href="${proj.href_live}"><img src="${proj.img}" alt="A screenshot of ${proj.title}"></a></div>
         <figcaption>${proj.title}</figcaption>
         <p class="links">
           <span>
