@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i,900i&display=swap');
 html {
   background-color: #f0f1f1;
 }
@@ -13,8 +12,8 @@ nav {
   right: 3em;
   padding: 1em;
   z-index: 30;
-  background-color: #f8ffd1;
-  box-shadow: -16px 20px 0px #233e22;
+  background-color: #385035;
+  box-shadow: -16px 20px 0px #dbded8;
 }
 
 nav a {
@@ -24,7 +23,12 @@ nav a {
 
 nav a:link,
 nav a:visited {
-  color: #6d8e52;
+  color: #f0f1f1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 .header-top {
@@ -65,6 +69,36 @@ nav a:visited {
   font-style: italic;
 }
 
+.header-mid {
+  margin: -7em 0 0 0;
+  z-index: 30;
+}
+
+.header-mid h2 {
+  margin: 2em 20vw 0 auto;
+  padding: 0.5em;
+  width: 6em;
+  font-family: 'Playfair Display';
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  background-color: #314428;
+  color: #f0f1f1;
+  box-shadow: -13px -17px 0px #496942;
+}
+/*
+.header-mid h2:before {
+  display: block;
+  content: 'portfolio of';
+  position: absolute;
+  top: -1.4em;
+  color: #b7e48b;
+}*/
+
+
+
 .item {
   position: absolute;
   background-repeat: no-repeat;
@@ -85,4 +119,35 @@ nav a:visited {
   bottom: 0em;
   right: -30em;
   z-index: -10;
+}
+
+.item-blossom {
+  width: 10em;
+  height: 6em;
+  background-image: url(/img/blossom.png);
+  bottom: -2em;
+  right: -4em;
+  z-index: -10;
+  background-size: contain;
+}
+
+
+@media only screen and (min-width: 1888px) {
+  header {
+    flex-direction: row;
+  }
+
+  .header-top {
+    width: 50vw;
+    overflow: unset;
+  }
+
+  .header-mid {
+    margin: 0;
+    width: 50vw;
+    background: linear-gradient(rgba(0,0,0,0), rgb(240, 241, 241));
+  }
+
+  .header-mid h2 {
+  }
 }
