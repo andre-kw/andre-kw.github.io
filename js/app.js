@@ -4,7 +4,7 @@ const context = (function() {
     {
       id: 1,
       title: 'Battlesound',
-      img: 'img/battlesound.png',
+      img: 'img/proj-battlesound.png',
       href_live: 'https://battlesound.now.sh',
       href_repo: 'https://github.com/andre-kw/battlesound-client',
       description: 'My first capstone project for Thinkful. Musicians can sign up and create music \
@@ -15,7 +15,7 @@ const context = (function() {
     {
       id: 2,
       title: 'Star Wars Search',
-      img: 'img/sw.png',
+      img: 'img/proj-sw.png',
       href_live: 'https://andre-kw-star-wars.now.sh',
       href_repo: 'https://github.com/andre-kw/thinkful-star-wars',
       description: 'A Thinkful assignment that uses the Star Wars API to search for information.',
@@ -36,13 +36,14 @@ const context = (function() {
 
     return `
       <figure>
-        <img src="${proj.img}" alt="A screenshot of ${proj.title}">
+        <div><img src="${proj.img}" alt="A screenshot of ${proj.title}"></div>
         <figcaption>${proj.title}</figcaption>
         <p class="links">
-          <a target="_blank" href="${proj.href_live}">live site</a> | 
-          <a target="_blank" href="${proj.href_repo}">repo</a>
-
-          <span>${stackHtml}</span>
+          <span>
+            <a target="_blank" href="${proj.href_live}">live site</a> | 
+            <a target="_blank" href="${proj.href_repo}">repo</a>
+          </span>
+          <span class="links-stack">${stackHtml}</span>
         </p>
         <p>${proj.description}</p>
       </figure>
