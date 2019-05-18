@@ -170,8 +170,8 @@ main {
   font-family: 'Playfair Display';
   font-size: 4em;
   font-style: italic;
-  color: #7b8cb3;
-  text-shadow: 10px -5px 0px #d4ddf1;
+  color: #156d41;
+  text-shadow: 10px -5px 0px #b9c7c0;
   text-align: center;
 }
 
@@ -270,12 +270,13 @@ figure > div:before {
   left: 0;
   content: ' ';
   background-image: url(/img/laurel.png);
-  background-size: contain;
+  background-size: 100% 100%;
   z-index: -1;
   background-repeat: no-repeat;
   right: 0;
   margin: auto;
   background-position: center;
+  max-width: 30em;
 }
 
 figcaption {
@@ -341,5 +342,13 @@ figure .links .links-stack i { margin: 0 .15em }
 
   .main-container p {
     font-size: 1em;
+  }
+
+  figure > div:before {
+    width: 100vw;
+    max-width: unset;
+    background-size: unset;
+    left: -16vw;
+    margin: 0;
   }
 }
