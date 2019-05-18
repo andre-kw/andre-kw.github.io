@@ -1,8 +1,31 @@
 
 const context = (function() {
+  const teamDancingPenguins = {
+    'Christopher Carnivale': 'https://github.com/cjcarnivale',
+    'Zol Fallows': 'https://github.com/ZolFallows',
+    'Michael Bonner': 'https://github.com/mdb1710',
+    'Ethan Zimmerman': 'https://github.com/thebinarypenguin',
+  };
+
+  const generateMemberList = (obj) => {
+    let html = Object.keys(obj).map(key => `<a target="_blank" href="${obj[key]}">${key}</a>`);
+
+    return '<br><strong>The team:</strong> ' + html.join(', ');
+  };
+
   const projects = [
     {
       id: 1,
+      title: 'Destructor',
+      img: 'img/proj-destructor.png',
+      href_live: 'https://destructor.now.sh',
+      href_repo: 'https://github.com/andre-kw/destructor',
+      description: 'A simple playground application for experimenting with and learning about \
+        data structures and their various functions.',
+      stack: ['React'],
+    },
+    {
+      id: 2,
       title: 'Battlesound',
       img: 'img/proj-battlesound.png',
       href_live: 'https://battlesound.now.sh',
@@ -13,7 +36,17 @@ const context = (function() {
       stack: ['React', 'Nodejs', 'Express', 'PostgreSQL'],
     },
     {
-      id: 2,
+      id: 3,
+      title: 'Spendful',
+      img: 'img/proj-spendful.png',
+      href_live: 'https://spendful.now.sh',
+      href_repo: 'https://github.com/thinkful-ei-armadillo/spendful-client',
+      description: `A Thinkful group capstone for tracking your expenses and visualizing your money flow. \
+        ${generateMemberList(teamDancingPenguins)}`,
+      stack: ['React', 'Nodejs', 'Express', 'PostgreSQL'],
+    },
+    {
+      id: 4,
       title: 'Star Wars Search',
       img: 'img/proj-sw.png',
       href_live: 'https://andre-kw-star-wars.now.sh',
