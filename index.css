@@ -292,6 +292,7 @@ figure .links {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 figure .links span { margin-top: .5em }
@@ -306,6 +307,11 @@ figure .links .links-stack i { margin: 0 .15em }
 #projects p {
   margin: 0 0 1em;
 }
+
+/* figure p:not(.links) a:link,
+figure p:not(.links) a:visited {
+  text-decoration: none;
+} */
 
 
 

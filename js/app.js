@@ -8,7 +8,9 @@ const context = (function() {
   };
 
   const generateMemberList = (obj) => {
-    let html = Object.keys(obj).map(key => `<a target="_blank" href="${obj[key]}">${key}</a>`);
+    let html = Object.keys(obj).map(key => (
+      `<a target="_blank" href="${obj[key]}">${key}</a>`
+    ));
 
     return '<br><strong>The team:</strong> ' + html.join(', ');
   };
