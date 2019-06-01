@@ -18,13 +18,13 @@ const context = (function() {
   const projects = [
     {
       id: 1,
-      title: 'Destructor',
-      img: 'img/proj-destructor.png',
-      href_live: 'https://destructor.now.sh',
-      href_repo: 'https://github.com/andre-kw/destructor',
-      description: 'A simple playground application for experimenting with and learning about \
-        data structures and their various functions.',
-      stack: ['React'],
+      title: 'Spendful',
+      img: 'img/proj-spendful.png',
+      href_live: 'https://spendful.now.sh',
+      href_repo: 'https://github.com/thinkful-ei-armadillo/spendful-client',
+      description: `A Thinkful group capstone for tracking your expenses and visualizing your money flow. \
+        ${generateMemberList(teamDancingPenguins)}`,
+      stack: ['React', 'Nodejs', 'Express', 'PostgreSQL'],
     },
     {
       id: 2,
@@ -39,13 +39,13 @@ const context = (function() {
     },
     {
       id: 3,
-      title: 'Spendful',
-      img: 'img/proj-spendful.png',
-      href_live: 'https://spendful.now.sh',
-      href_repo: 'https://github.com/thinkful-ei-armadillo/spendful-client',
-      description: `A Thinkful group capstone for tracking your expenses and visualizing your money flow. \
-        ${generateMemberList(teamDancingPenguins)}`,
-      stack: ['React', 'Nodejs', 'Express', 'PostgreSQL'],
+      title: 'Destructor',
+      img: 'img/proj-destructor.png',
+      href_live: 'https://destructor.now.sh',
+      href_repo: 'https://github.com/andre-kw/destructor',
+      description: 'A simple playground application for experimenting with and learning about \
+        data structures and their various functions.',
+      stack: ['React'],
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const context = (function() {
 
     return `
       <figure>
-        <div><a target="_blank" href="${proj.href_live}"><img src="${proj.img}" alt="A screenshot of ${proj.title}"></a></div>
+        <a target="_blank" href="${proj.href_live}"><img src="${proj.img}" alt="A screenshot of ${proj.title}"></a>
         <figcaption>${proj.title}</figcaption>
         <p class="links">
           <span>
