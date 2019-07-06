@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display:700i&display=swap');
+
 html {
   background-color: #f0f1f1;
 }
@@ -96,39 +98,74 @@ figure {
   margin: 2em auto;
   padding: 0 5px;
   flex-basis: 25em;
+  font-size: 1.2em;
 }
 
 figure > a {
   display: block;
   max-height: 18em;
   overflow: hidden;
-  border: 6px solid #fff;
+  border: 10px solid #ececec;
+  border-radius: 10px;
+}
+
+figure > p {
+  line-height: 1.75em;
 }
 
 figure img {
   width: 25em;
   max-width: 100%;
   max-height: 18em;
+  border-radius: 10px;
 }
 
 figure figcaption {
   margin: 0.5em 0 0;
   font-size: 2.25em;
   font-family: 'Playfair Display';
+  color: #3d537d;
 }
 
-figure .links {
+figure a:link,
+figure a:visited {
+  color: #274f82;
+}
+
+.links {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-figure .links-stack {
-  font-size: 2.5em;
+.links-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 2em;
 }
 
-figure .links-stack > i {
+.links-stack > i {
   margin: 0 0 0 5px;
+}
+
+
+footer {
+  padding: .5em 0;
+  background-color: #e8e8e8;
+}
+footer > p {
+  margin: 0;
+  text-align: center;
+  color: gray;
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  article > p {
+    font-size: 1.6em;
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -139,5 +176,14 @@ figure .links-stack > i {
   article > p {
     font-size: 1em;
     line-height: 1.25em;
+  }
+
+  .links-stack {
+    flex-basis: 3em;
+    font-size: 1.5em;
+  }
+
+  .links-stack > i {
+    margin: 0 0 10px 5px;
   }
 }
