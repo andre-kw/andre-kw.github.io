@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Lora|Playfair+Display:700i&display=swap');
+@import url('//fonts.googleapis.com/css?family=Lora|Playfair+Display:700i');
 
 html {
   background-color: #f0f1f1;
@@ -51,6 +51,7 @@ article > p {
 .section-landing h1 {
   margin: 0 0 1em;
   font-weight: normal;
+  animation-delay: .5s;
 }
 
 .section-landing h1,
@@ -89,7 +90,7 @@ article > p {
 .landing-links {
   text-align: right;
   font-size: 2.5em;
-  animation-delay: .25s;
+  animation-delay: .75s;
 }
 
 .landing-links a:link,
@@ -116,7 +117,7 @@ article > p {
   100% { transform: translateY(0px) }
 }
 
-.landing-hero { animation-delay: .5s; }
+.landing-hero { animation-delay: 1s; }
 
 
 .section-bio p {
