@@ -43,7 +43,7 @@ const context = (function() {
       img: 'img/proj-destructor.png',
       href_live: 'https://destructor.now.sh',
       href_repo: 'https://github.com/andre-kw/destructor',
-      description: 'A simple playground application for experimenting with and learning about \
+      description: 'An educational application for experimenting with and learning about \
         data structures and their various functions.',
       stack: ['React'],
     },
