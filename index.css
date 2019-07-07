@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Playfair+Display:700i&display=swap');
+@import url('//fonts.googleapis.com/css?family=Lora|Playfair+Display:700i&display=swap');
 
 html {
   background-color: #f0f1f1;
@@ -58,7 +58,7 @@ article > p {
 .landing-hero {
   opacity: 0;
   animation-name: fade-flip;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
