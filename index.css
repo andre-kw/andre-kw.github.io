@@ -23,7 +23,7 @@ article > p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1b526b;
+  background-color: #3f97e0;
   color: #fff;
 }
 
@@ -45,12 +45,34 @@ article > p {
 
 .section-landing article {
   width: 30em;
-  margin: 0 0 3em;
+  margin: 0 0 2em;
 }
 
 .section-landing h1 {
+  margin: 0 0 1em;
   font-weight: normal;
 }
+
+.section-landing h1,
+.landing-links,
+.landing-hero {
+  opacity: 0;
+  animation-name: fade-flip;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-flip {
+  0% {
+    opacity: 0;
+    transform: translate3d(20px, -20px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 .section-landing h1 > p {
   margin: 0;
@@ -61,12 +83,13 @@ article > p {
 }
 
 .section-landing p {
-  text-shadow: 0px 4px 1px #0f394c;
+  text-shadow: 0px 4px 1px #227bc5;
 }
 
 .landing-links {
   text-align: right;
   font-size: 2.5em;
+  animation-delay: .25s;
 }
 
 .landing-links a:link,
@@ -79,8 +102,21 @@ article > p {
 
 .landing-links a:hover {
   transform: translateY(-5px);
-  text-shadow: 0px 7px 1px #0f394c;
+  text-shadow: 0px 7px 1px #227bc5;
 }
+
+.landing-links a:active {
+  transform: translateY(-5px);
+  animation-name: btn-click;
+  animation-duration: 1s;
+}
+
+@keyframes btn-click {
+  0% { transform: translateY(2px) }
+  100% { transform: translateY(0px) }
+}
+
+.landing-hero { animation-delay: .5s; }
 
 
 .section-bio p {
@@ -105,6 +141,7 @@ figure > a {
   display: block;
   max-height: 18em;
   overflow: hidden;
+  background-color: #ececec;
   border: 10px solid #ececec;
   border-radius: 10px;
 }
@@ -117,8 +154,15 @@ figure img {
   width: 25em;
   max-width: 100%;
   max-height: 18em;
-  border-radius: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 2s;
 }
+figure:hover img {
+  transform: scale(1.5)
+}
+
 
 figure figcaption {
   margin: 0.5em 0 0;
@@ -136,6 +180,7 @@ figure a:visited {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  color: #c3c3c3;
 }
 
 .links-stack {
@@ -168,7 +213,12 @@ footer > p {
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 426px), (max-height: 650px) {
+  .section-landing {
+    justify-content: unset;
+    padding-top: 2em;
+  }
+
   .section-landing article {
     max-width: 100%;
   }
